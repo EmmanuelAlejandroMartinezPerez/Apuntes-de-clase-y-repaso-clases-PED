@@ -1,0 +1,38 @@
+APUNTES DE GIT: MANEJO DE RAMAS
+
+============================================================
+
+CREAR RAMAS
+============================================================
+
+Crear y cambiarte a la rama al mismo tiempo (LA MAS USADA):
+git checkout -b nombre-de-la-rama
+
+OPCION MODERNA:
+git switch -c nombre-de-la-rama
+
+Solo crear la rama (sin moverte a ella):
+git branch nombre-de-la-rama
+
+============================================================
+2. CAMBIAR ENTRE RAMAS
+Moverte a una rama que ya existe:
+git checkout nombre-de-la-rama
+
+OPCION MODERNA:
+git switch nombre-de-la-rama
+
+Ver en que rama estas parado y listar ramas locales:
+git branch
+
+============================================================
+3. GUARDAR Y SUBIR CAMBIOS (PUSH)
+Guardar cambios locales (PASO PREVIO AL PUSH):
+git add .
+git commit -m "descripcion breve de los cambios"
+
+Primera vez que subes una rama nueva a GitHub/GitLab:
+git push -u origin nombre-de-la-rama
+
+Subir cambios en las siguientes ocasiones (misma rama):
+git push
